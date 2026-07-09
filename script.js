@@ -29,7 +29,6 @@ function openGift() {
 
 
 // Efek muncul ketika halaman dibuka
-
 document.addEventListener("DOMContentLoaded", () => {
 
     const cards = document.querySelectorAll(".memory-card");
@@ -43,3 +42,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
