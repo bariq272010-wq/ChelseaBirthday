@@ -33,24 +33,7 @@ function openGift() {
 
 // Efek muncul saat halaman dibuka
 
-document.addEventListener(
-    "DOMContentLoaded",
-    () => {
 
-        const elements = document.querySelectorAll(
-            ".hero, .gallery, .letter, .closing"
-        );
-
-
-        elements.forEach((element) => {
-
-            element.style.opacity = "0";
-
-        });
-
-
-    }
-);
 
 
 
