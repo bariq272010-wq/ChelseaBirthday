@@ -2,140 +2,187 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
+
 body {
-    background: #fff0f6;
-    color: #4a3045;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(
+        180deg,
+        #fff0f5,
+        #ffe4ec
+    );
+    color: #4a2c35;
     overflow-x: hidden;
 }
 
 
-.hidden {
-    display: none;
+html {
+    scroll-behavior: smooth;
 }
 
 
-/* OPENING */
 
-.opening {
+/* Opening */
 
-    height: 100vh;
-    width: 100%;
-
+#opening {
+    min-height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px;
+}
 
-    text-align: center;
+
+.opening-card {
+
+    background: rgba(255,255,255,0.8);
+
+    width: 100%;
+    max-width: 420px;
+
     padding: 30px;
 
-    background:
-    linear-gradient(
-        135deg,
-        #fce4ec,
-        #e8d9ff
-    );
+    border-radius: 25px;
+
+    text-align: center;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,0.12);
+
+    backdrop-filter: blur(10px);
 
 }
 
 
-.opening h1 {
+
+.cover {
+
+    width: 200px;
+
+    height: 200px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    margin-bottom: 25px;
+
+    border: 5px solid white;
+
+}
+
+
+
+.opening-card h3 {
+
+    font-size: 18px;
+
+    font-weight: 400;
+
+}
+
+
+
+.opening-card h1 {
+
+    font-family: 'Great Vibes', cursive;
 
     font-size: 45px;
-    color: #9b4d8b;
-    margin-bottom: 20px;
+
+    color: #d63384;
+
+    margin: 10px 0;
 
 }
 
 
-.opening p {
 
-    max-width: 320px;
-    font-size: 16px;
-    margin-bottom: 35px;
+.opening-card p {
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    margin-bottom: 25px;
 
 }
 
 
-.opening button {
 
-    padding: 15px 35px;
+button {
 
     border: none;
-    border-radius: 50px;
 
-    background:
-    linear-gradient(
-        135deg,
-        #d88bca,
-        #a77bff
-    );
+    background: #d63384;
 
     color: white;
+
+    padding: 14px 35px;
+
+    border-radius: 50px;
+
     font-size: 16px;
 
     cursor: pointer;
 
+    transition: 0.3s;
+
 }
 
 
-/* HERO */
+
+button:hover {
+
+    transform: scale(1.05);
+
+}
+
+
+
+/* Main */
+
+.hidden {
+
+    display: none;
+
+}
+
+
+
+#main {
+
+    animation: fadeIn 1.5s ease;
+
+}
+
+
+
+@keyframes fadeIn {
+
+    from {
+
+        opacity:0;
+
+    }
+
+    to {
+
+        opacity:1;
+
+    }
+
+}
+
+
+
+/* Hero */
 
 .hero {
 
-    min-height:100vh;
-
-    background-image:
-    url("assets/cover.jpg");
-
-    background-size:cover;
-    background-position:center;
-
-    display:flex;
-
-    justify-content:center;
-    align-items:center;
-
-    position:relative;
-
-}
-
-
-.overlay {
-
-    position:absolute;
-
-    inset:0;
-
-    background:
-    rgba(255,255,255,.35);
-
-    backdrop-filter:blur(5px);
-
-}
-
-
-
-.hero-content {
-
-    position:relative;
-
-    z-index:2;
-
     text-align:center;
 
-    padding:30px;
-
-}
-
-
-
-.cover-image {
-
-    display:none;
+    padding:70px 20px 40px;
 
 }
 
@@ -147,16 +194,16 @@ body {
 
     height:170px;
 
-    border-radius:50%;
-
     object-fit:cover;
 
-    border:5px solid white;
+    border-radius:50%;
+
+    border:6px solid white;
 
     box-shadow:
-    0 10px 30px rgba(0,0,0,.25);
+    0 10px 30px rgba(0,0,0,0.15);
 
-    margin-bottom:20px;
+    margin-bottom:25px;
 
 }
 
@@ -164,9 +211,11 @@ body {
 
 .hero h1 {
 
-    font-size:45px;
+    font-family:'Great Vibes', cursive;
 
-    color:#9b4d8b;
+    font-size:55px;
+
+    color:#d63384;
 
 }
 
@@ -176,139 +225,174 @@ body {
 
     font-size:25px;
 
-    margin:15px 0;
-
-    color:#a34d88;
+    margin-top:10px;
 
 }
 
 
 
-.hero span {
+.date {
 
-    display:block;
+    margin-top:10px;
 
-    margin-top:20px;
-
-}
-
-
-/* SECTION */
-
-section {
-
-    padding:70px 25px;
-
-}
-
-
-h2 {
-
-    text-align:center;
-
-    color:#9b4d8b;
-
-    margin-bottom:25px;
+    color:#777;
 
 }
 
 
 
-/* INTRO */
+.hero-text {
 
-.intro,
-.letter,
-.ending {
+    margin:25px auto;
 
-    text-align:center;
+    max-width:500px;
 
     line-height:1.8;
 
 }
+/* Gallery */
 
+.gallery {
 
+    padding:50px 20px;
 
-/* MEMORY */
-
-.memories {
-
-    background:#fff7fb;
+    text-align:center;
 
 }
 
 
 
-.memory-card {
+.gallery h2 {
 
+    font-family:'Great Vibes', cursive;
+
+    font-size:45px;
+
+    color:#d63384;
+
+    margin-bottom:35px;
+
+}
+
+
+
+.gallery-grid {
+
+    display:grid;
+
+    grid-template-columns:repeat(2, 1fr);
+
+    gap:18px;
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+
+
+.card {
 
     background:white;
 
-    padding:20px;
-
-    border-radius:25px;
-
-    margin:30px 0;
-
-
-    box-shadow:
-
-    0 10px 30px rgba(0,0,0,.08);
-
-
-    opacity:1;
-
-    transform:translateY(0);
-
-    transition:.5s ease;
-
-}
-
-
-
-.memory-card img {
-
-    width:100%;
+    padding:12px;
 
     border-radius:20px;
 
-    margin-bottom:15px;
+    box-shadow:
+    0 10px 25px rgba(0,0,0,0.1);
+
+    transition:0.3s;
 
 }
 
 
 
-.memory-card h3 {
+.card:hover {
 
-    color:#b45fa0;
-
-    margin-bottom:10px;
+    transform:translateY(-5px);
 
 }
 
 
 
-.memory-card p {
+.card img {
 
-    line-height:1.7;
+    width:100%;
+
+    height:200px;
+
+    object-fit:cover;
+
+    border-radius:15px;
 
 }
 
 
 
-/* LETTER */
+.card p {
+
+    margin-top:10px;
+
+    font-size:14px;
+
+}
+
+
+
+/* Surat */
 
 .letter {
 
-    background:#fff;
-
-    white-space:pre-line;
+    padding:60px 20px;
 
 }
 
 
-.letter p {
+
+.letter h2 {
+
+    text-align:center;
+
+    font-family:'Great Vibes', cursive;
+
+    font-size:50px;
+
+    color:#d63384;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.letter-box {
+
+    max-width:700px;
+
+    margin:auto;
+
+    background:white;
+
+    padding:35px 25px;
+
+    border-radius:25px;
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,0.12);
+
+}
+
+
+
+.letter-box p {
+
+    font-size:15px;
 
     line-height:2;
+
+    margin-bottom:20px;
 
     text-align:left;
 
@@ -316,63 +400,290 @@ h2 {
 
 
 
-/* ENDING */
+.letter-box p:first-child {
 
+    font-weight:600;
 
-.ending {
+    font-size:18px;
 
-    min-height:70vh;
-
-    background:
-
-    linear-gradient(
-
-        135deg,
-
-        #efd9ff,
-
-        #ffd9e8
-
-    );
+    color:#d63384;
 
 }
 
 
-.ending h3 {
 
-    margin-top:30px;
+/* Closing */
 
-    color:#a34d88;
+.closing {
 
-}
+    text-align:center;
 
-
-/* MOBILE */
-
-@media(max-width:600px){
-
-
-.hero h1 {
-
-    font-size:38px;
+    padding:70px 20px;
 
 }
 
 
-.hero h2 {
 
-    font-size:22px;
+.closing h2 {
+
+    font-family:'Great Vibes', cursive;
+
+    font-size:55px;
+
+    color:#d63384;
+
+}
+
+
+
+.closing p {
+
+    margin-top:15px;
+
+    line-height:1.8;
 
 }
 
 
-.profile-photo {
 
-    width:140px;
+.heart {
 
-    height:140px;
+    font-size:45px;
+
+    margin-top:25px;
+
+    animation:pulse 1.5s infinite;
 
 }
 
+
+
+@keyframes pulse {
+
+    0% {
+
+        transform:scale(1);
+
+    }
+
+
+    50% {
+
+        transform:scale(1.2);
+
+    }
+
+
+    100% {
+
+        transform:scale(1);
+
+    }
+
+}
+/* Floating Hearts */
+
+body::before {
+
+    content:"❤️";
+
+    position:fixed;
+
+    top:20%;
+
+    left:10%;
+
+    font-size:25px;
+
+    opacity:0.25;
+
+    animation:floatHeart 6s infinite ease-in-out;
+
+}
+
+
+
+body::after {
+
+    content:"🤍";
+
+    position:fixed;
+
+    bottom:20%;
+
+    right:10%;
+
+    font-size:30px;
+
+    opacity:0.25;
+
+    animation:floatHeart 7s infinite ease-in-out;
+
+}
+
+
+
+@keyframes floatHeart {
+
+    0% {
+
+        transform:translateY(0);
+
+    }
+
+
+    50% {
+
+        transform:translateY(-30px);
+
+    }
+
+
+    100% {
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+/* Responsive HP */
+
+@media (max-width:600px) {
+
+
+    .opening-card {
+
+        padding:25px 20px;
+
+    }
+
+
+    .cover {
+
+        width:160px;
+
+        height:160px;
+
+    }
+
+
+    .opening-card h1 {
+
+        font-size:38px;
+
+    }
+
+
+    .hero {
+
+        padding-top:50px;
+
+    }
+
+
+    .profile-photo {
+
+        width:140px;
+
+        height:140px;
+
+    }
+
+
+    .hero h1 {
+
+        font-size:45px;
+
+    }
+
+
+    .hero h2 {
+
+        font-size:22px;
+
+    }
+
+
+    .gallery-grid {
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .card img {
+
+        height:260px;
+
+    }
+
+
+    .letter-box {
+
+        padding:25px 18px;
+
+    }
+
+
+    .letter-box p {
+
+        font-size:14px;
+
+        line-height:1.9;
+
+    }
+
+
+    .letter h2 {
+
+        font-size:42px;
+
+    }
+
+
+    .closing h2 {
+
+        font-size:45px;
+
+    }
+
+}
+
+
+
+/* Smooth appearance */
+
+.hero,
+.gallery,
+.letter,
+.closing {
+
+    animation:slideUp 1.2s ease;
+
+}
+
+
+
+@keyframes slideUp {
+
+    from {
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+
+    to {
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
 
 }
