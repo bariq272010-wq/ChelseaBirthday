@@ -1,320 +1,479 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>For Chelsea 🤍</title>
+    <title>Happy Birthday Chelsea ❤️</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- Opening Screen -->
-    <div class="opening" id="opening">
-
-        <div class="stars"></div>
-
-        <h1>Hi, Eci... 🤍</h1>
-
-        <p>
-            Ada seseorang yang sudah menyiapkan
-            hadiah kecil untukmu...
-        </p>
-
-        <button onclick="openGift()">
-            Open My Gift 🎁
-        </button>
-
-    </div>
+    <!-- Musik -->
+    <audio id="bgMusic" loop>
+        <source src="assets/background.mp3" type="audio/mpeg">
+    </audio>
 
 
-    <!-- Main Website -->
+    <!-- Halaman Pembuka -->
+    <section id="opening">
 
-    <main id="main" class="hidden">
+        <div class="opening-card">
 
-        <section class="hero">
+            <img src="assets/cover.JPG"
+                 class="cover"
+                 alt="Cover">
 
-    <img src="assets/cover.JPG" class="cover-image" alt="Cover">
+            <h3>
+                🎁 Sebuah Hadiah Untuk
+            </h3>
 
-    <div class="overlay"></div>
-
-    <div class="hero-content">
-
-        <img src="assets/Profil.JPG" class="profile-photo" alt="Chelsea">
-
-        <h1>
-            Happy Birthday 🤍
-        </h1>
-
-        <h2>
-            Chelsea Wan Pakaya
-        </h2>
-
-        <p>
-            10 July 2010
-        </p>
-
-        <span>
-            Made with love by Bariq 🤍
-        </span>
-
-    </div>
-
-</section>
-
-
-        <section class="intro">
-
-            <h2>
-                A Little Gift For You 🌸
-            </h2>
+            <h1>
+                Chelsea Wan Pakaya
+            </h1>
 
             <p>
-                Sebuah tempat kecil yang berisi
-                cerita, kenangan, dan doa terbaik
-                untuk seseorang yang sangat berarti.
+                Ada sebuah hadiah kecil yang aku siapkan
+                khusus untukmu.
+                Semoga bisa membuatmu tersenyum. ❤️
             </p>
+
+            <button onclick="openGift()">
+                💖 Buka Hadiah
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Isi Utama -->
+    <main id="main" class="hidden">
+
+
+        <!-- Bagian Profil -->
+        <section class="hero">
+
+            <img src="assets/Profil.JPG"
+                 class="profile-photo"
+                 alt="Profil Chelsea">
+
+
+            <h1>
+                Happy Birthday
+            </h1>
+
+
+            <h2>
+                Chelsea Wan Pakaya ❤️
+            </h2>
+
+
+            <p class="date">
+                10 Juli 2026
+            </p>
+
+
+            <p class="hero-text">
+                Semoga hari-harimu selalu dipenuhi
+                kebahagiaan, kesehatan, dan keberkahan.
+                Jangan pernah berhenti mengejar impianmu.
+            </p>
+
 
         </section>
 
 
-        <section class="memories">
 
-<h2>
-    Our Memories 📸
-</h2>
+        <!-- Memories -->
+        <section class="gallery">
 
-
-<div class="memory-card">
-
-    <img src="./assets/Memory1.jpg" alt="Memory 1">
-
-    <h3>Memory #1</h3>
-
-    <p>
-        Selfie bersama wanita tercantik di sejagat raya. 🤍
-    </p>
-
-</div>
+            <h2>
+                Our Memories 📸
+            </h2>
 
 
-<div class="memory-card">
-
-    <img src="./assets/Memory2.jpg" alt="Memory 2">
-
-    <h3>Memory #2</h3>
-
-    <p>
-        Salah satu momen favorit Bariq bersama Chelsea 🤍
-    </p>
-
-</div>
+            <div class="gallery-grid">
 
 
-<div class="memory-card">
+                <div class="card">
 
-    <img src="./assets/Memory%203.jpg" alt="Memory 3">
+                    <img src="assets/Memory1.jpg"
+                         alt="Memory 1">
 
-    <h3>Memory #3</h3>
+                    <p>
+                        Memory 1
+                    </p>
 
-    <p>
-        Sebuah kenangan yang selalu ingin Bariq ingat 🤍
-    </p>
-
-</div>
-
-
-<div class="memory-card">
-
-    <img src="./assets/Memory4.jpg" alt="Memory 4">
-
-    <h3>Memory #4</h3>
-
-    <p>
-        Momen indah bersama Chelsea 🌸
-    </p>
-
-</div>
+                </div>
 
 
-<div class="memory-card">
 
-    <img src="./assets/Memory5.jpg" alt="Memory 5">
+                <div class="card">
 
-    <h3>Memory #5</h3>
+                    <img src="assets/Memory2.jpg"
+                         alt="Memory 2">
 
-    <p>
-        Terima kasih untuk setiap cerita yang kita punya 🤍
-    </p>
+                    <p>
+                        Memory 2
+                    </p>
 
-</div>
-
-
-<div class="memory-card">
-
-    <img src="./assets/Memory6.jpg" alt="Memory 6">
-
-    <h3>Memory #6</h3>
-
-    <p>
-        Kenangan kecil yang sangat berarti 🤍
-    </p>
-
-</div>
+                </div>
 
 
-</section>
 
+                <div class="card">
+
+                    <img src="assets/Memory 3.jpg"
+                         alt="Memory 3">
+
+                    <p>
+                        Memory 3
+                    </p>
+
+                </div>
+                                <div class="card">
+
+                    <img src="assets/Memory4.jpg"
+                         alt="Memory 4">
+
+                    <p>
+                        Memory 4
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <img src="assets/Memory5.jpg"
+                         alt="Memory 5">
+
+                    <p>
+                        Memory 5
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- Surat Untuk Chelsea -->
         <section class="letter">
 
             <h2>
-                A Letter For You 💌
+                💌 Untuk Chelsea
             </h2>
 
-            <p>
-                Happy Birthday, Chelsea Wan Pakaya. 🤍🎂
 
-Happy birthday, Chelseaa. Nama e cantikk, orang e lebih cantikk lagi. 🤍
+            <div class="letter-box">
 
-Selamat bertambah umur, sayang. Semoga di umur yang baru ini Chelsea semakin dewasa, semakin rajin belajar, semakin dekat dengan Allah SWT, semakin sayang sama Mama, Papa, dan Ade, serta semua urusan Chelsea dimudahkan. Aamiin.
 
-Barik tidak pernah lepas dari doa untuk Chelsea. Setiap doa yang terbaik selalu Barik titipkan kepada Allah, semoga semua impian Chelsea satu per satu bisa tercapai. 🤍
+                <p>
+                    Happy Birthday, Chelsea Wan Pakaya. 🤍🎂
+                </p>
 
-⸻
 
-Hari ini adalah hari yang paling Barik tunggu-tunggu.
+                <p>
+                    Happy birthday, Chelseaa.
+                    Nama nya cantikk, orang nya lebih cantikk lagi🤍
+                </p>
 
-Hari yang paling spesial buat orang yang paling Barik sayang.
 
-Maaf karena Barik belum bisa datang menemani Chelsea di hari spesial ini. Jujur, Barik juga menyesal dan sudah berusaha mencari banyak cara supaya bisa hadir. Semoga doa-doa Barik hari ini cukup menjadi bukti betapa besar rasa sayang Barik kepada Chelsea.
+                <p>
+                    Selamat bertambah umur, sayang.
+                    Semoga di umur yang baru ini Chelsea semakin dewasa,
+                    semakin rajin belajar, semakin dekat dengan Allah SWT,
+                    semakin sayang sama Mama, Papa, dan Ade,
+                    serta semua urusan Chelsea dimudahkan.
+                    Aamiin.
+                </p>
 
-Walaupun sekarang kita berjauhan, semoga rasa sayang ini tetap sama, tetap tumbuh, dan tetap bertahan selamanya.
 
-Miss you, Chel. 🤍
+                <p>
+                    Barik tidak pernah lepas dari doa untuk Chelsea.
+                    Setiap doa yang terbaik selalu Barik titipkan kepada Allah,
+                    semoga semua impian Chelsea satu per satu bisa tercapai. 🤍
+                </p>
 
-⸻
 
-Semoga Chelsea selalu sehat, panjang umur, selalu diberkahi Allah, dan selalu dikelilingi oleh orang-orang yang tulus menyayangi Chelsea.
+                <p>
+                    Hari ini adalah hari yang paling Barik tunggu-tunggu.
+                </p>
 
-Semoga semua cita-cita Chelsea tercapai. Barik akan selalu mendoakan itu.
 
-Terima kasih juga untuk Mama dan Papa Chelsea yang sudah menghadirkan perempuan sebaik, secantik, sepintar, dan seshalihah Chelsea ke dunia ini.
+                <p>
+                    Hari yang paling spesial buat orang yang paling Barik sayang.
+                </p>
 
-MasyaAllah…
 
-Menurut Barik, Chelsea adalah definisi perempuan yang luar biasa.
+                <p>
+                    Maaf karena Barik belum bisa datang menemani Chelsea
+                    di hari spesial ini.
+                    Jujur, Barik juga menyesal dan sudah berusaha mencari
+                    banyak cara supaya bisa hadir.
+                </p>
 
-Terima kasih karena sudah hadir di hidup Barik.
 
-⸻
+                <p>
+                    Semoga doa-doa Barik hari ini cukup menjadi bukti
+                    betapa besar rasa sayang Barik kepada Chelsea.
+                </p>
 
-Chelsea adalah salah satu alasan terbesar Barik ingin berubah menjadi lebih baik.
 
-Barik ingin mengejar masa depan yang lebih baik.
+                <p>
+                    Walaupun sekarang kita berjauhan,
+                    semoga rasa sayang ini tetap sama,
+                    tetap tumbuh, dan tetap bertahan selamanya.
+                </p>
 
-Barik ingin membanggakan orang tua.
 
-Dan suatu hari nanti, kalau Allah mengizinkan Barik sukses, Chelsea adalah salah satu orang yang punya peran besar dalam perjalanan itu.
+                <p>
+                    Miss you, Chel. 🤍
+                </p>
+                                <p>
+                    Semoga Chelsea selalu sehat, panjang umur,
+                    selalu diberkahi Allah, dan selalu dikelilingi
+                    oleh orang-orang yang tulus menyayangi Chelsea.
+                </p>
 
-⸻
 
-Semoga selama di Luwuk Chelsea semakin semangat belajar, semakin banyak prestasi yang diraih, dan selalu menjaga diri.
+                <p>
+                    Semoga semua cita-cita Chelsea tercapai.
+                    Barik akan selalu mendoakan itu.
+                </p>
 
-Barik juga titip satu hal…
 
-Semoga Chelsea tetap menjaga hati dan menjaga jarak dengan lawan jenis yaa. 🤍
+                <p>
+                    Terima kasih juga untuk Mama dan Papa Chelsea
+                    yang sudah menghadirkan perempuan sebaik,
+                    secantik, sepintar, dan seshalihah Chelsea
+                    ke dunia ini.
+                </p>
 
-Bukan karena Barik tidak percaya.
 
-Justru karena Barik sangat menjaga hubungan ini.
+                <p>
+                    MasyaAllah…
+                </p>
 
-⸻
 
-Barik tahu Barik belum sempurna.
+                <p>
+                    Menurut Barik, Chelsea adalah definisi
+                    perempuan yang luar biasa.
+                </p>
 
-Tapi Barik akan terus berusaha menjadi laki-laki yang lebih baik untuk Chelsea.
 
-Terima kasih sudah menerima Barik apa adanya.
+                <p>
+                    Terima kasih karena sudah hadir di hidup Barik.
+                </p>
 
-Itu adalah salah satu nikmat terbesar yang selalu Barik syukuri kepada Allah.
 
-⸻
+                <p>
+                    Chelsea adalah salah satu alasan terbesar
+                    Barik ingin berubah menjadi lebih baik.
+                </p>
 
-Chelsea…
 
-Jangan lupa senyum yaa.
+                <p>
+                    Barik ingin mengejar masa depan yang lebih baik.
+                </p>
 
-Karena senyum Chelsea itu cantik sekali.
 
-MasyaAllah.
+                <p>
+                    Barik ingin membanggakan orang tua.
+                </p>
 
-Tapi… jangan senyum-senyum sama cowok lain yaa. 🤭🤍
 
-⸻
+                <p>
+                    Dan suatu hari nanti, kalau Allah mengizinkan
+                    Barik sukses, Chelsea adalah salah satu orang
+                    yang punya peran besar dalam perjalanan itu.
+                </p>
 
-Semoga Chelsea selalu bahagia.
 
-Kalau Allah kasih kesempatan Barik pulang ke Luwuk, Barik ingin ketemu Chelsea.
+                <p>
+                    Semoga selama di Luwuk Chelsea semakin semangat
+                    belajar, semakin banyak prestasi yang diraih,
+                    dan selalu menjaga diri.
+                </p>
 
-Semoga Allah mudahkan semua urusan Chelsea.
 
-Semoga Allah juga mudahkan jalan kita berdua.
+                <p>
+                    Barik juga titip satu hal…
+                </p>
 
-Kalau memang Allah menakdirkan kita berjodoh…
 
-Semoga Allah menjaga kita sampai waktu itu tiba.
+                <p>
+                    Semoga Chelsea tetap menjaga hati dan menjaga
+                    jarak dengan lawan jenis yaa. 🤍
+                </p>
 
-Aamiin Ya Rabbal ’Alamin.
 
-⸻
+                <p>
+                    Bukan karena Barik tidak percaya.
+                </p>
 
-🤍 Happy Birthday, My Favorite Person.
 
-Semoga Chelsea menjadi pribadi yang lebih baik dari hari ke hari.
+                <p>
+                    Justru karena Barik sangat menjaga hubungan ini.
+                </p>
 
-Semoga selalu bahagia.
 
-Karena setiap kali Chelsea tersenyum…
+                <p>
+                    Barik tahu Barik belum sempurna.
+                </p>
 
-Barik juga ikut bahagia.
 
-Senyum Chelsea adalah salah satu penyemangat terbesar dalam hidup Barik.
+                <p>
+                    Tapi Barik akan terus berusaha menjadi laki-laki
+                    yang lebih baik untuk Chelsea.
+                </p>
 
-Terima kasih sudah menjadi bagian dari hidup Barik.
 
-I Love You Till Jannah. ❤️‍🩹🤍
-                
-            </p>
+                <p>
+                    Terima kasih sudah menerima Barik apa adanya.
+                </p>
+
+
+                <p>
+                    Itu adalah salah satu nikmat terbesar yang selalu
+                    Barik syukuri kepada Allah.
+                </p>
+
+
+                <p>
+                    Chelsea…
+                </p>
+
+
+                <p>
+                    Jangan lupa senyum yaa.
+                    Karena senyum Chelsea itu cantik sekali.
+                    MasyaAllah.
+                </p>
+
+
+                <p>
+                    Tapi… jangan senyum-senyum sama cowok lain yaa.
+                    🤭🤍
+                </p>
+                                <p>
+                    Semoga Chelsea selalu bahagia.
+                </p>
+
+
+                <p>
+                    Kalau Allah kasih kesempatan Barik pulang ke Luwuk,
+                    Barik ingin ketemu Chelsea.
+                </p>
+
+
+                <p>
+                    Semoga Allah mudahkan semua urusan Chelsea.
+                </p>
+
+
+                <p>
+                    Semoga Allah juga mudahkan jalan kita berdua.
+                </p>
+
+
+                <p>
+                    Kalau memang Allah menakdirkan kita berjodoh…
+                </p>
+
+
+                <p>
+                    Semoga Allah menjaga kita sampai waktu itu tiba.
+                </p>
+
+
+                <p>
+                    Aamiin Ya Rabbal ’Alamin.
+                </p>
+
+
+                <p>
+                    🤍 Happy Birthday, My Favorite Person.
+                </p>
+
+
+                <p>
+                    Semoga Chelsea menjadi pribadi yang lebih baik
+                    dari hari ke hari.
+                </p>
+
+
+                <p>
+                    Semoga selalu bahagia.
+                </p>
+
+
+                <p>
+                    Karena setiap kali Chelsea tersenyum…
+                    Barik juga ikut bahagia.
+                </p>
+
+
+                <p>
+                    Senyum Chelsea adalah salah satu penyemangat
+                    terbesar dalam hidup Barik.
+                </p>
+
+
+                <p>
+                    Terima kasih sudah menjadi bagian dari hidup Barik.
+                </p>
+
+
+                <p>
+                    I Love You Till Jannah. ❤️‍🩹🤍
+                </p>
+
+
+            </div>
 
         </section>
 
 
-        <section class="ending">
+
+        <!-- Penutup -->
+        <section class="closing">
 
             <h2>
-                Thank You For Existing 🤍
+                Terima Kasih ❤️
             </h2>
 
             <p>
-                Semoga Allah selalu menjaga Chelsea
-                dan memudahkan semua langkahmu.
+                Untuk semua kenangan indah yang sudah kita buat.
             </p>
 
-            <h3>
-                I Love You Than Any Words Can Say Chelsea 🤍
-            </h3>
+            <div class="heart">
+                ❤️
+            </div>
 
         </section>
 
 
     </main>
-<audio id="bgMusic" loop>
-    <source src="audio/background.mp3" type="audio/mpeg">
-</audio>
 
-<script src="script.js"></script>
+
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
