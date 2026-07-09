@@ -5,7 +5,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-
 body {
     background: #fff0f6;
     color: #4a3045;
@@ -18,7 +17,7 @@ body {
 }
 
 
-/* Opening Screen */
+/* OPENING */
 
 .opening {
 
@@ -31,14 +30,13 @@ body {
     align-items: center;
 
     text-align: center;
-
     padding: 30px;
 
     background:
     linear-gradient(
-    135deg,
-    #fce4ec,
-    #e8d9ff
+        135deg,
+        #fce4ec,
+        #e8d9ff
     );
 
 }
@@ -46,13 +44,9 @@ body {
 
 .opening h1 {
 
-    font-family: 'Playfair Display', serif;
-
     font-size: 45px;
-
-    margin-bottom: 20px;
-
     color: #9b4d8b;
+    margin-bottom: 20px;
 
 }
 
@@ -60,50 +54,35 @@ body {
 .opening p {
 
     max-width: 320px;
-
     font-size: 16px;
-
     margin-bottom: 35px;
 
-    color: #6b5368;
-
 }
-
 
 
 .opening button {
 
-
     padding: 15px 35px;
 
     border: none;
-
     border-radius: 50px;
 
     background:
-
     linear-gradient(
-    135deg,
-    #d88bca,
-    #a77bff
+        135deg,
+        #d88bca,
+        #a77bff
     );
 
+    color: white;
+    font-size: 16px;
 
-    color:white;
-
-    font-size:16px;
-
-    cursor:pointer;
-
-    box-shadow:
-    0 10px 30px rgba(160,100,200,.3);
+    cursor: pointer;
 
 }
 
 
-
-/* Hero */
-
+/* HERO */
 
 .hero {
 
@@ -113,19 +92,16 @@ body {
     url("assets/cover.jpg");
 
     background-size:cover;
-
     background-position:center;
 
     display:flex;
 
-    align-items:center;
-
     justify-content:center;
+    align-items:center;
 
     position:relative;
 
 }
-
 
 
 .overlay {
@@ -137,7 +113,7 @@ body {
     background:
     rgba(255,255,255,.35);
 
-    backdrop-filter:blur(4px);
+    backdrop-filter:blur(5px);
 
 }
 
@@ -145,12 +121,11 @@ body {
 
 .hero-content {
 
-
     position:relative;
 
-    text-align:center;
-
     z-index:2;
+
+    text-align:center;
 
     padding:30px;
 
@@ -158,12 +133,40 @@ body {
 
 
 
+.cover-image {
+
+    display:none;
+
+}
+
+
+
+.profile-photo {
+
+    width:170px;
+
+    height:170px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:5px solid white;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.25);
+
+    margin-bottom:20px;
+
+}
+
+
+
 .hero h1 {
 
-    font-family:
-    'Playfair Display', serif;
-
     font-size:45px;
+
+    color:#9b4d8b;
 
 }
 
@@ -180,6 +183,7 @@ body {
 }
 
 
+
 .hero span {
 
     display:block;
@@ -189,9 +193,7 @@ body {
 }
 
 
-
-/* Sections */
-
+/* SECTION */
 
 section {
 
@@ -200,56 +202,76 @@ section {
 }
 
 
+h2 {
+
+    text-align:center;
+
+    color:#9b4d8b;
+
+    margin-bottom:25px;
+
+}
+
+
+
+/* INTRO */
 
 .intro,
 .letter,
 .ending {
 
-
     text-align:center;
 
-}
-
-
-
-h2 {
-
-    font-family:
-    'Playfair Display', serif;
-
-    color:#9b4d8b;
-
-    margin-bottom:20px;
+    line-height:1.8;
 
 }
 
 
 
-/* Memories */
+/* MEMORY */
+
+.memories {
+
+    background:#fff7fb;
+
+}
+
 
 
 .memory-card {
 
 
-    background:
-    rgba(255,255,255,.6);
+    background:white;
 
-
-    padding:25px;
+    padding:20px;
 
     border-radius:25px;
 
-
-    margin:25px 0;
-
-
-    backdrop-filter:blur(10px);
+    margin:30px 0;
 
 
     box-shadow:
 
-    0 10px 30px
-    rgba(0,0,0,.08);
+    0 10px 30px rgba(0,0,0,.08);
+
+
+    opacity:1;
+
+    transform:translateY(0);
+
+    transition:.5s ease;
+
+}
+
+
+
+.memory-card img {
+
+    width:100%;
+
+    border-radius:20px;
+
+    margin-bottom:15px;
 
 }
 
@@ -265,7 +287,36 @@ h2 {
 
 
 
-/* Ending */
+.memory-card p {
+
+    line-height:1.7;
+
+}
+
+
+
+/* LETTER */
+
+.letter {
+
+    background:#fff;
+
+    white-space:pre-line;
+
+}
+
+
+.letter p {
+
+    line-height:2;
+
+    text-align:left;
+
+}
+
+
+
+/* ENDING */
 
 
 .ending {
@@ -276,11 +327,11 @@ h2 {
 
     linear-gradient(
 
-    135deg,
+        135deg,
 
-    #efd9ff,
+        #efd9ff,
 
-    #ffd9e8
+        #ffd9e8
 
     );
 
@@ -296,9 +347,7 @@ h2 {
 }
 
 
-
-/* Mobile */
-
+/* MOBILE */
 
 @media(max-width:600px){
 
@@ -316,21 +365,14 @@ h2 {
 
 }
 
+
+.profile-photo {
+
+    width:140px;
+
+    height:140px;
+
 }
-.profile-photo{
 
-    width:170px;
-
-    height:170px;
-
-    border-radius:50%;
-
-    object-fit:cover;
-
-    border:5px solid white;
-
-    box-shadow:0 10px 30px rgba(0,0,0,.25);
-
-    margin-bottom:20px;
 
 }
