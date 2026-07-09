@@ -34,9 +34,6 @@ function openGift() {
 // Efek muncul saat halaman dibuka
 
 
-
-
-
 // Klik gambar untuk memperbesar
 
 const images = document.querySelectorAll(".card img");
