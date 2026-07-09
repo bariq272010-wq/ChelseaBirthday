@@ -661,32 +661,13 @@ body::after {
 .letter,
 .closing {
 
-    animation:slideUp 1.2s ease;
+    animation: none;
 
 }
 
 
 
-@keyframes slideUp {
 
-    from {
-
-        opacity:0;
-
-        transform:translateY(40px);
-
-    }
-
-
-    to {
-
-        opacity:1;
-
-        transform:translateY(0);
-
-    }
-
-}
 .card img.zoom {
 
     transform:scale(1.08);
