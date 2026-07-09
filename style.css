@@ -687,3 +687,10 @@ body::after {
     }
 
 }
+.card img.zoom {
+
+    transform:scale(1.08);
+
+    transition:0.4s;
+
+}
