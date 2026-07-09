@@ -1,16 +1,17 @@
-const music = document.getElementById("bgMusic");
-
 function openGift() {
-
-    if (music) {
-        music.volume = 0.3;
-        music.play().catch(() => {});
-    }
 
     const opening = document.getElementById("opening");
     const main = document.getElementById("main");
+    const music = document.getElementById("bgMusic");
 
+
+    // Mulai musik
+    music.play();
+
+
+    // Animasi membuka hadiah
     opening.style.opacity = "0";
+
 
     setTimeout(() => {
 
@@ -19,27 +20,54 @@ function openGift() {
         main.classList.remove("hidden");
 
         window.scrollTo({
-            top: 0,
-            behavior: "smooth"
+            top:0,
+            behavior:"smooth"
         });
 
-    }, 800);
+
+    },800);
 
 }
 
 
-// Efek muncul ketika halaman dibuka
-document.addEventListener("DOMContentLoaded", () => {
 
-    const cards = document.querySelectorAll(".memory-card");
+// Efek muncul saat halaman dibuka
 
-    cards.forEach(card => {
+document.addEventListener(
+    "DOMContentLoaded",
+    () => {
 
-        card.style.opacity = "0";
+        const elements = document.querySelectorAll(
+            ".hero, .gallery, .letter, .closing"
+        );
 
-        card.style.transform = "translateY(30px)";
 
-    });
+        elements.forEach((element) => {
+
+            element.style.opacity = "0";
+
+        });
+
+
+    }
+);
+
+
+
+// Klik gambar untuk memperbesar
+
+const images = document.querySelectorAll(".card img");
+
+
+images.forEach((img)=>{
+
+    img.addEventListener(
+        "click",
+        ()=>{
+
+            img.classList.toggle("zoom");
+
+        }
+    );
 
 });
-
