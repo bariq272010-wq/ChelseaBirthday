@@ -6,7 +6,13 @@ function openGift() {
 
 
     // Mulai musik
-    music.play();
+    music.volume = 0.5;
+
+music.play().then(() => {
+    console.log("Musik berjalan");
+}).catch((error) => {
+    console.log("Musik gagal diputar", error);
+});
 
 
     // Animasi membuka hadiah
